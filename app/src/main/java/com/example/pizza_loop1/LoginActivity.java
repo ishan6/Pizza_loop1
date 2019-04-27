@@ -8,9 +8,10 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
-    private Button button;
+    private Button login;
     private TextView forgot_pass;
     private TextView sign_up;
+    private TextView sign_up2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,24 +19,42 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        button = findViewById(R.id.button3);
-        forgot_pass = findViewById(R.id.forgot_pass);
-        sign_up = findViewById(R.id.sign_up);
+        login = findViewById(R.id.btn_login);
+        forgot_pass = findViewById(R.id.lbl_forgot_pass);
+        sign_up = findViewById(R.id.lbl_register);
+        sign_up2 = findViewById(R.id.lbl_register2);
 
-        sign_up.setOnClickListener(new View.OnClickListener() {
+        sign_up2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                openlogin1();
+                GoToRegister();
             }
         });
 
 
+        sign_up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GoToRegister();
+            }
+        });
+
+        forgot_pass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GoToPassReset();
+            }
+        });
 
     }
 
-    public void openlogin1(){
+    public void GoToRegister(){
         Intent intent = new Intent(this, SignUpActivity.class);
+        startActivity(intent);
+    }
+
+    public void GoToPassReset(){
+        Intent intent = new Intent(this, PassResetActivity.class);
         startActivity(intent);
     }
 }

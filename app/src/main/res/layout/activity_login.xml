@@ -8,7 +8,7 @@
     tools:context=".SignUpActivity">
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/txt_telephone"
         android:layout_width="307dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -31,7 +31,7 @@
         app:layout_constraintVertical_bias="0.515" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/txt_password"
         android:layout_width="305dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -45,6 +45,7 @@
         android:drawablePadding="8dp"
         android:ems="10"
         android:hint="Password"
+        android:clickable="true"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +55,7 @@
         app:layout_constraintVertical_bias="0.673" />
 
     <TextView
-        android:id="@+id/forgot_pass"
+        android:id="@+id/lbl_forgot_pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -73,7 +74,7 @@
         android:clickable="true"/>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_login"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -92,7 +93,7 @@
         app:layout_constraintVertical_bias="0.896" />
 
     <TextView
-        android:id="@+id/sign_up"
+        android:id="@+id/lbl_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -101,12 +102,32 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Don'tyou have a acount ? Register"
+        android:clickable="true"
+        android:text="Don't you have a acount ?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.368"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.988"
-        android:clickable="true"/>
+        app:layout_constraintVertical_bias="0.989" />
+
+    <TextView
+        android:id="@+id/lbl_register2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:text="Register"
+        android:textColor="#EE0202"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989" />
 </android.support.constraint.ConstraintLayout>
